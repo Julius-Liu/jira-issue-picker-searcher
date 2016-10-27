@@ -1,0 +1,24 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="issue-picker-searcher"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="issue-picker-searcher-resources" name="issue-picker-searcher Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="issue-picker-searcher.css" location="/css/issue-picker-searcher.css"/>
+        <resource type="download" name="issue-picker-searcher.js" location="/js/issue-picker-searcher.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>issue-picker-searcher</context>
+    </web-resource>
+    
+</atlassian-plugin>
