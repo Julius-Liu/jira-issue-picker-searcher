@@ -21,4 +21,20 @@
         <context>issue-picker-searcher</context>
     </web-resource>
     
+    <!-- add custom field types -->
+    <customfield-type key="customizable-issue-picker-searcher" 
+                      name="Configurable Issue Picker (+ Searcher)"
+                      class="com.brittanisavery.jira.plugins.issuepicker.IssuePickerCFType">
+      <description>
+        A configurable issue picker with searching capabilities
+      </description>
+      
+      <resource type="velocity" 
+                name="view" 
+           location="templates/com/brittanisavery/jira/plugins/issuepicker/view.vm"/>
+      <resource type="velocity" 
+                name="edit" 
+           location="templates/com/brittanisavery/jira/plugins/issuepicker/edit.vm"/>
+    </customfield-type>
+    
 </atlassian-plugin>

@@ -10,12 +10,12 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <organization>
-        <name>Example Company</name>
-        <url>http://www.example.com/</url>
+        <name>Brittani S. Avery</name>
+        <url>https://www.linkedin.com/in/brittanisavery</url>
     </organization>
 
     <name>issue-picker-searcher</name>
-    <description>This is the com.brittanisavery.jira.plugins:issue-picker-searcher plugin for Atlassian JIRA.</description>
+    <description>This is a JIRA plugin that adds a configurable, searchable, and stattable issue picker custom field.</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>
